@@ -18,6 +18,29 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+require 'universal_validator'
+
+class Command
+  def foo
+    ...
+    data = {name: 'bar', age: 200}
+    ...
+    v = UniversalValidator::Validator.new do |v|
+      v.add_error_for(:name, 'wrong name') if data[:name] != 'baz'
+      v.add_error_for(:age, 'wrong age') if data[:age] > 100
+    end
+    if v.errors?
+      p v.errors #=> {:name=>["wrong name"], :age=>["wrong age"]}
+      p errors_for(:name) #=> ["wrong name"]
+      ...
+    else
+      ...
+    end
+  end
+end
+```
+
 ## Versioning
 
 See [semver.org][semver]
