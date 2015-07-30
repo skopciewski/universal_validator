@@ -32,7 +32,7 @@ class Command
     end
     if v.errors?
       p v.errors #=> {:name=>["wrong name"], :age=>["wrong age"]}
-      p errors_for(:name) #=> ["wrong name"]
+      p v.errors_for(:name) #=> ["wrong name"]
       ...
     else
       ...
