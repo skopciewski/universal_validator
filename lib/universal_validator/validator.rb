@@ -1,6 +1,6 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-# Copyright (C) 2015 Szymon Kopciewski
+# Copyright (C) 2015, 2016 Szymon Kopciewski
 #
 # This file is part of UniversalValidator.
 #
@@ -24,7 +24,7 @@ module UniversalValidator
     end
 
     def errors?
-      errors.count > 0
+      errors.count.positive?
     end
 
     def errors
