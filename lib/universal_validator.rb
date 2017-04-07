@@ -18,3 +18,4 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 require "universal_validator/validator"
+require "universal_validator/version"
