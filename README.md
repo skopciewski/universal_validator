@@ -1,6 +1,8 @@
 # UniversalValidator
 
 [![Gem Version](https://badge.fury.io/rb/universal_validator.svg)](http://badge.fury.io/rb/universal_validator)
+[![Code Climate](https://codeclimate.com/github/skopciewski/universal_validator/badges/gpa.svg)](https://codeclimate.com/github/skopciewski/universal_validator)
+[![Dependency Status](https://gemnasium.com/badges/github.com/skopciewski/universal_validator.svg)](https://gemnasium.com/github.com/skopciewski/universal_validator)
 
 ## Installation
 
